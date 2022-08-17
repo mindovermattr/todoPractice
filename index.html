@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MyToDoFull</title>
+</head>
+<body>
+    <div class="app-wrapper">
+        <div class="app container">
+            <header class="header container">
+                <div class="app__status d-none" id="status"><span></span><span class="stick-anim">|</span></div>
+                <h1 class="header__title title">ToDo</h1>
+                <div class="header__toolBar">
+                    <button class="header__tool edit" id="redact">Edit</button>
+                    <button class="header__tool remove" id="remove">Remove</button>
+                </div>
+            </header>
+                <div class="app__task-names" id="task-names">
+                   <!-- Тело -->
+                </div>
+            <div class="app__task-add">
+                <input type="text" class="app__input" id="newTask" placeholder="Новая задача...">
+                <button class="app__button button--big" id="add">Add task</button>
+            </div>
+            <div class="app__task-change app__task-add d-none">
+                <input type="text" class="app__input" id="changeTask" placeholder="Изменить задачу...">
+                <button class="app__button button--big" id="changeButton">Change task</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
